@@ -9,4 +9,6 @@ print("Ghc 5.00" \
 "Ghc 80.00")
 
 print("Total Amount:Ghc 135.00")
-print("Thank You")
+print("Thank You" \
+"(>_<)")
+
