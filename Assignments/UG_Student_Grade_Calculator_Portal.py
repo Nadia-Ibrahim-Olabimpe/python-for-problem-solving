@@ -13,7 +13,7 @@
 #  able to reach the grade calculator with the wrong credentials
 
 # 3️⃣ Grade Calculation
-# Once logged in successfully, ask the user to enter their exam score (0–100), and print the correct 
+# Once logged in successfully, ask the user to enter their exam score (0–100), and print the correct
 # letter grade using the official UG scale:
 
 # 80 – 100 ➜ A
@@ -46,27 +46,27 @@
 # Give the user 3 attempts to enter the correct login credentials before the program locks them out with "Access denied.
 # " You haven't formally covered loops yet, so this is a genuine challenge — attempt it only once the core assignment is fully working
 
-#Registration
+# Registration
 print("=====================")
 print("= Create an Account =")
 print("=====================")
 print()
 
-user_email= input("Enter your email address: ")
-user_password= input("Enter your password: ")
+user_email = input("Enter your email address: ")
+user_password = input("Enter your password: ")
 print()
 print("Registration successful!")
 print()
 print()
 
 
-#Login
+# Login
 print("----------------")
 print("- Login Page.  -")
 print("----------------")
 
-login_email= input("Enter your email address: ")
-login_password= input("Enter your password: ")
+login_email = input("Enter your email address: ")
+login_password = input("Enter your password: ")
 
 if login_email == user_email and login_password == user_password:
     print()
@@ -76,40 +76,34 @@ if login_email == user_email and login_password == user_password:
     print(" Grade Calculator")
     print("******************")
     print()
-    
-    grade= int(input("Enter your exam score: "))
-    if grade >=80 and grade<= 100:
-         print(" Your grade is A")
-    elif grade >=75:
-         print(" Your grade is B+")
-    elif grade >=70:
-         print(" Your grade is B")
-    elif grade >=65:
-         print(" Your grade is C+")
-    elif grade >=60:
-         print(" Your grade is C")
-    elif grade >=55:
-         print(" Your grade is D+")
-    elif grade >=50:
-         print(" Your grade is D")
-    elif grade >=45:
-         print(" Your grade is E")
-         
-    else: print(" Your grade is F")
+
+    grade = int(input("Enter your exam score: "))
+    if grade >= 80 and grade <= 100:
+        print(" Your grade is A")
+    elif grade >= 75:
+        print(" Your grade is B+")
+    elif grade >= 70:
+        print(" Your grade is B")
+    elif grade >= 65:
+        print(" Your grade is C+")
+    elif grade >= 60:
+        print(" Your grade is C")
+    elif grade >= 55:
+        print(" Your grade is D+")
+    elif grade >= 50:
+        print(" Your grade is D")
+    elif grade >= 45:
+        print(" Your grade is E")
+
+    else:
+        print(" Your grade is F")
 
 
-elif login_email ==user_email and login_password !=user_password:
-     print("Wrong Password!")
+elif login_email == user_email and login_password != user_password:
+    print("Wrong Password!")
 
-elif login_email !=user_email and login_password ==user_password:
-     print("Email not recognized!")
-    
-else:  print("Incorrect credentials!")
+elif login_email != user_email and login_password == user_password:
+    print("Email not recognized!")
 
-
-
-
-
-
-
-    
+else:
+    print("Incorrect credentials!")
